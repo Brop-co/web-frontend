@@ -3,9 +3,6 @@
 import { projects } from '@/utils/constants'
 import Image from 'next/image'
 import React from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { Pagination } from 'swiper/modules'
-
 
 function OurProjects({}) {
   return (
