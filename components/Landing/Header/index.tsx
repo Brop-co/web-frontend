@@ -21,22 +21,24 @@ React.useEffect(()=> {
 },[])
   return (
     <div className='page-header w-full flex justify-between items-center p-5 pl-10 pr-10 sticky top-0 bg-transparent z-50'>
-      <div className='flex gap-8 items-center'>
-        {
-          landingHeaderListItems.map((item, index) => (
-            <Link key={index} href={item.link} className=' cursor-pointer hover:text-[var(--color-4)]'>
-              {item.name}
-            </Link>
-          ))
-        }
-      </div>
+<div className="flex items-center justify-between w-1/2">
+        <div className='flex gap-8 items-center'>
+          {
+            landingHeaderListItems.map((item, index) => (
+              <Link key={index} href={item.link} className=' cursor-pointer hover:text-[var(--color-4)]'>
+                {item.name}
+              </Link>
+            ))
+          }
+        </div>
+          <Image
+            src={"/svg/logo.svg"}
+            width={50}
+            height={50}
+            alt='Brop Logo'
+          />
+</div>
 
-      <Image
-        src={"/svg/logo.svg"}
-        width={50}
-        height={50}
-        alt='Brop Logo'
-      />
 
       <div>
         <button className='btn btn--primary'>
