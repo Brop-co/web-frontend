@@ -5,7 +5,7 @@ import React from 'react'
 
 function Hero({}) {
   return (
-    <div className='h-auto flex flex-col items-center p-5 mt-10 pb-10 gap-16'>
+    <div className='h-auto flex flex-col items-center p-5 mt-10 pb-10 gap-16' id='home'>
         <Image
         src={"/svg/heading.svg"}
         width={100}

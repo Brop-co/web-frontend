@@ -3,6 +3,7 @@ import "./globals.css";
 import { urbanist } from "@/utils/fonts";
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 export const metadata: Metadata = {
   title: "Brop CO",

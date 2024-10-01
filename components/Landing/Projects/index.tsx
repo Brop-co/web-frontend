@@ -4,6 +4,7 @@ import React from 'react'
 function OurProjects({}) {
   return (
     <div
+    id='projects'
           className='w-full p-5 bg-[var(--color-1)] text-[var(--white)] h-auto flex items-center justify-evenly pl-10 pr-10'
     >
 
