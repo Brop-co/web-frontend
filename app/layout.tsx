@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { urbanist } from "@/utils/fonts";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 export const metadata: Metadata = {
   title: "Brop CO",
