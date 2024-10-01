@@ -15,3 +15,10 @@ export const team = [
     { name: "Arsene Muvunyi", role: "Marketing Expert", image: "/svg/team/arsene.svg" },
     { name: "Remy Chiessa", role: "3D Model Designer", image: "/svg/team/chiessa.svg" },
 ]
+
+
+export const projects = [
+    {name:"Conexus", category: "AI", image:"/svg/conexus.svg"},
+    {name:"Conexus", category: "AI", image:"/svg/conexus.svg"},
+    {name:"Conexus", category: "AI", image:"/svg/conexus.svg"},
+]
