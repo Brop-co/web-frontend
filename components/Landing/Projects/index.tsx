@@ -4,6 +4,7 @@ import { projects } from '@/utils/constants'
 import { ArrowUpRight } from 'lucide-react'
 import Image from 'next/image'
 import React from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react'
 
 function OurProjects({ }) {
   return (
@@ -17,13 +18,11 @@ function OurProjects({ }) {
         height={300}
         alt='Our Amazing Projects'
       />
-
-
-      <div className='mt-5 w-full grid m:grid-cols-2 grid-cols-1  gap-5 sm:p-16 '>
+      <div className='mt-5 w-full grid md:grid-cols-2 grid-cols-1  gap-5 sm:p-16 '>
         {
           projects.map((project, index) => (
-            <>
-              <div key={index} className='w-[100%] relative cursor-pointer group duration-200 rounded-3xl overflow-hidden group-hover:mb-2'>
+            <div key={index} className='w-full mr-0 md:mr-5 group'>
+              <div className='w-[100%] relative cursor-pointer  mr-0 md:mr-5 group duration-200 rounded-3xl overflow-hidden group-hover:mb-2'>
                 <h1 className='absolute bg-[var(--color-2)] text-[2em] top-5 left-5 rounded-full text-[var(--color-1)] w-[100px] text-center z-30'>
                   {project.category}
                 </h1>
@@ -48,10 +47,10 @@ function OurProjects({ }) {
                   {project.name}
                 </h1>
                 <h1 className='text-[2.2em] items-center justify-start gap-3 flex transition-all duration-300 transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 group-hover:visible invisible absolute top-0'>
-                  {project.name} <ArrowUpRight className="hidden group-hover:block font-extrabold size-10" fontSize={20} />
+                  {project.name} <ArrowUpRight className="hidden group-hover:block font-extrabold size-10" fontSize={20}/>
                 </h1>
               </div>
-            </>
+            </div>
           ))
         }
 
