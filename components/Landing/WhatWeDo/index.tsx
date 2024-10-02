@@ -16,7 +16,7 @@ function WhatWeDo({ }) {
                 height={300}
                 alt='What We Do Text'
                 />
-                <p className=' leading-8 hidden md:block'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident blanditiis sed fugit numquam, labore libero perspiciatis eveniet accusamus ducimus doloribus nam minus obcaecati facere amet repudiandae rerum quos vitae? Laborum saepe sunt accusantium sit id optio veniam blanditiis, adipisci quidem exercitationem deserunt architecto officiis, delectus cupiditate quas corrupti a earum. Dolores officiis ullam ipsum odio incidunt, pariatur repudiandae hic ipsa?</p>
+                <p className=' leading-8 hidden md:block'>At Brop Co, we specialize in mobile app and web development, crafting innovative, user-friendly solutions tailored to your business. We also provide expert branding and marketing strategies to strengthen your brand identity and customer engagement. Our AI and IoT engineering services bring cutting-edge technology to enhance automation and productivity.</p>
 
 
                 <div className='w-full md:w-1/2 block md:hidden'>

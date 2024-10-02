@@ -22,7 +22,7 @@ function Hero({}) {
                 <h1 className='text-[var(--color-2)] font-extrabold'>KIGALI CITY</h1>
                 <h2>Rwanda</h2>
             </div>
-            <div className='w-[50%] absolute sm:relative -z-50'>
+            <div className='w-[50%] absolute sm:relative -z-10'>
                 <Image
                 src={"/images/globe.png"}
                 width={500}
@@ -39,7 +39,7 @@ function Hero({}) {
                 height={200}
                 alt='satisfied customers'
                 />
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero maxime blanditiis in delectus. Natus mollitia ab harum illum at quis?</p>
+                  <p>Transform your vision with Brop Co. We deliver innovative software and web solutions to help your business thrive in the digital world.</p>
                 <button className='btn btn--secondary'>Contact Us</button>
 
             </div>
