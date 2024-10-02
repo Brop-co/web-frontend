@@ -1,9 +1,11 @@
+import Footer from "@/components/Footer";
 import AboutUs from "@/components/Landing/AboutUs";
 import Header from "@/components/Landing/Header";
 import Hero from "@/components/Landing/Hero";
 import OurProjects from "@/components/Landing/Projects";
 import Team from "@/components/Landing/Team";
 import WhatWeDo from "@/components/Landing/WhatWeDo";
+import Marquee from "@/components/Marquee";
 import Image from "next/image";
 
 export default function Home() {
@@ -22,8 +24,10 @@ export default function Home() {
       </div>
       <WhatWeDo />
       <OurProjects />
-        <AboutUs />
+      <AboutUs />
       <Team />
+      <Marquee />
+      <Footer />
     </>
   );
 }

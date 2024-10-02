@@ -32,3 +32,13 @@ export const services = [
     { name: "Branding & Marketing", image: "/svg/branding.svg", desc: "Brop CO, Branding & Marketing Service"},
     { name: "AI & IoT Engineering", image: "/svg/iot.svg", desc: "Brop CO, AI Service"},
 ] 
+
+
+export const socials = [
+    {name:"Linkedin", link:"#"},
+    {name:"instagram", link:"#"},
+    {name:"behance", link:"#"},
+    {name:"Dribble", link:"#"},
+    {name:"Twitter", link:"#"}
+]
+

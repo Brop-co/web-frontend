@@ -4,7 +4,6 @@ import { projects } from '@/utils/constants'
 import { ArrowUpRight } from 'lucide-react'
 import Image from 'next/image'
 import React from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react'
 
 function OurProjects({ }) {
   return (
