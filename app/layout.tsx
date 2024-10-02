@@ -8,6 +8,20 @@ import 'swiper/css/navigation';
 export const metadata: Metadata = {
   title: "Brop CO",
   description: "Discover Brop, where experts deliver custom software solutions, web development, and innovative technology services. Transform your vision into reality with our top-tier expertise.",
+  keywords: "brop, brop inc, brop co, brop company ",
+  openGraph: {
+    type: "website",
+    url: "https://brop.co.rw",
+    title: "Brop CO",
+    description: "Discover Brop, where experts deliver custom software solutions, web development, and innovative technology services. Transform your vision into reality with our top-tier expertise.",
+    siteName: "Brop",
+    images: [{
+      url: "/images/logo_full.png",
+      width: 800,
+      height: 600
+    }],
+    locale: "en_US",
+  }
 
 };
 
