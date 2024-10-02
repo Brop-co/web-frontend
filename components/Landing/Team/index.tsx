@@ -48,21 +48,21 @@ function Team({ }) {
                     {
                         team.map((member, index) => (
                             <SwiperSlide key={index} className='swiper-slide w-full bg-[#070728] p-5 ml-2 rounded-xl mb-10 flex '>
-                                <div className='flex flex-col items-start justify-between gap-5 w-full'>
+                                <div className='flex flex-col items-center justify-between gap-5 w-full cursor-pointer group'>
                                     <Image
                                         src={member.image}
-                                        width={400}
+                                        width={200}
                                         height={200}
                                         alt={`Brop Inc, Brop's ${member.name}, ${member.role}`}
-                                        className='w-full'
+                                        className=''
                                     />
 
-                                    <div className="flex flex-col gap-2 w-full">
-                                        <h1 className="uppercase font-extrabold text-[2em]">
+                                    <div className="flex flex-col gap-2 w-full items-center">
+                                        <h1 className="uppercase font-extrabold text-[2em] text-[grey] group-hover:text-white duration-200 transition-all">
                                             {member.name}
                                         </h1>
 
-                                        <h3 className='capitalize text-[1.2em]'>
+                                        <h3 className='capitalize text-[1.2em] text-[grey]'>
                                             {member.role}
                                         </h3>
                                     </div>

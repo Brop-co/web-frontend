@@ -28,7 +28,7 @@ function Footer({ }) {
                         {
                             socials.map((social, index) => (
                                 <a key={index} href={social.link}
-                                    className='font-bold text-[grey] text-[1.1rem] mb-4'
+                                    className='font-bold text-[grey] text-[1.1rem] mb-4 capitalize'
                                     target='_blank' rel='noreferrer'>
                                     {social.name}
                                 </a>
@@ -40,7 +40,7 @@ function Footer({ }) {
                         {
                             landingHeaderListItems.map((social, index) => (
                                 <Link key={index} href={social.link}
-                                    className='font-bold text-[grey] text-[1.1rem] mb-4'
+                                    className='font-bold text-[grey] text-[1.1rem] mb-4 capitalize'
                                     >
                                     {social.name}
                                 </Link>
