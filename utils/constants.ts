@@ -9,7 +9,7 @@ export const landingHeaderListItems = [
 
 
 export const team = [
-    {name:"Hugues Ishema", role:"Graphic Designer", image:"/svg/team/hugues.svg"},
+    { name: "Hugues Ishema", role: "Graphic Designer", image: "/svg/team/hugues.svg" },
     { name: "Yves Mugisha", role: "Mobile App Developer", image: "/svg/team/mugisha.svg" },
     { name: "Henri Tresor", role: "Full stack Developer", image: "/svg/team/henri.svg" },
     { name: "Arsene Muvunyi", role: "Marketing Expert", image: "/svg/team/arsene.svg" },
@@ -18,7 +18,7 @@ export const team = [
 
 
 export const projects = [
-    {name:"Conexus", category: "AI", image:"/svg/conexus.svg"},
-    {name:"Conexus", category: "AI", image:"/svg/conexus.svg"},
-    {name:"Conexus", category: "AI", image:"/svg/conexus.svg"},
+    { name: "Conexus", category: "AI", image: "/svg/conexus.svg", description: "Conexus is an integrated platform that bridges communication and mobility gaps for deaf and visually impaired individuals." },
+    { name: "Conexus", category: "AI", image: "/svg/conexus.svg", description: "Conexus is an integrated platform that bridges communication and mobility gaps for deaf and visually impaired individuals." },
+    { name: "Conexus", category: "AI", image: "/svg/conexus.svg", description: "Conexus is an integrated platform that bridges communication and mobility gaps for deaf and visually impaired individuals." },
 ]
