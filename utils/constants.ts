@@ -21,4 +21,6 @@ export const projects = [
     { name: "Conexus", category: "AI", image: "/svg/conexus.svg", description: "Conexus is an integrated platform that bridges communication and mobility gaps for deaf and visually impaired individuals." },
     { name: "Conexus", category: "AI", image: "/svg/conexus.svg", description: "Conexus is an integrated platform that bridges communication and mobility gaps for deaf and visually impaired individuals." },
     { name: "Conexus", category: "AI", image: "/svg/conexus.svg", description: "Conexus is an integrated platform that bridges communication and mobility gaps for deaf and visually impaired individuals." },
+    { name: "Conexus", category: "AI", image: "/svg/conexus.svg", description: "Conexus is an integrated platform that bridges communication and mobility gaps for deaf and visually impaired individuals." },
+    { name: "Conexus", category: "AI", image: "/svg/conexus.svg", description: "Conexus is an integrated platform that bridges communication and mobility gaps for deaf and visually impaired individuals." },
 ]

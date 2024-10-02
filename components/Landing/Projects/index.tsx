@@ -4,12 +4,13 @@ import { projects } from '@/utils/constants'
 import { ArrowUpRight } from 'lucide-react'
 import Image from 'next/image'
 import React from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react'
 
 function OurProjects({ }) {
   return (
     <div
       id='projects'
-      className='w-full p-5 bg-[var(--color-1)] text-[var(--white)] h-auto flex flex-col items-center pl-10 pr-10'
+      className='w-full p-5  text-[var(--white)] h-auto flex flex-col items-center pl-10 pr-10'
     >
       <Image
         src={'/svg/projects_text.svg'}
@@ -18,38 +19,49 @@ function OurProjects({ }) {
         alt='Our Amazing Projects'
       />
 
-      <div className='mt-5 w-full grid grid-cols-4  gap-5'>
+
+      {/* <Swiper
+        slidesPerView={3}
+        className='w-full mt-16'
+        > */}
+      <div className='mt-5 w-full grid sm:grid-cols-2 grid-cols-1  gap-5 p-16 '>
         {
           projects.map((project, index) => (
-            <div key={index} className='w-full relative cursor-pointer group duration-200 rounded-t-3xl overflow-hidden'>
-              <h1 className='absolute bg-[var(--color-2)] text-[2em] top-5 left-5 rounded-full text-[var(--color-1)] w-[100px] text-center '>
-                {project.category}
-              </h1>
-              <Image
-                src={project.image}
-                width={200}
-                height={200}
-                alt={`Brop Inc, Brop's ${project.name}`}
-                className='w-[100%] object-cover'
-              />
-              <div className='absolute top-0 w-full h-full bg-transparent transition-all duration-300 hover:bg-[rgba(0,0,0,0.8)] left-0 hidden items-center justify-center text-center z-10 group-hover:flex flex-col gap-5 group'>
-                <p className='text-[1.1rem] font-bold transition-opacity delay-100 duration-300 opacity-0 group-hover:opacity-100 '>
-                  {project.description}
-                </p>
-                <button className='btn btn--unusual flex items-center justify-center gap-2'>
-                  Check it out <span><ArrowUpRight /> </span>
-                </button>
+            <SwiperSlide key={index} className='mr-5 group'>
+              <div className='w-[100%] relative cursor-pointer group duration-200 rounded-3xl overflow-hidden group-hover:mb-2'>
+                <h1 className='absolute bg-[var(--color-2)] text-[2em] top-5 left-5 rounded-full text-[var(--color-1)] w-[100px] text-center z-30'>
+                  {project.category}
+                </h1>
+                <Image
+                  src={project.image}
+                  width={200}
+                  height={200}
+                  alt={`Brop Inc, Brop's ${project.name}`}
+                  className='w-[100%] h-[550px] object-cover group-hover:scale-105 duration-500'
+                />
+                <div className='absolute top-0 w-full h-full bg-transparent transition-all duration-300 hover:bg-[rgba(0,0,0,0.8)] left-0 hidden items-center justify-center text-center z-10 group-hover:flex flex-col gap-5 group'>
+                  <p className='text-[1.1rem] font-bold transition-opacity delay-100 duration-300 opacity-0 group-hover:opacity-100 '>
+                    {project.description}
+                  </p>
+                  <button className='btn btn--unusual flex items-center justify-center gap-2'>
+                    Check it out <span><ArrowUpRight /> </span>
+                  </button>
+                </div>
               </div>
-              <div className='w-full absolute left-0 bg-[rgba(0,0,0,0.7)] group bottom-0 p-5 transition-transform duration-300'>
-                <h1 className='text-[2.2em] items-center justify-start gap-3 flex'>
+              <div className='w-full left-0 group bottom-0 p-5 relative font-extrabold uppercase'>
+                <h1 className='text-[2.2em] items-center justify-start gap-3 flex transition-all duration-300 transform group-hover:-translate-y-10 group-hover:opacity-0'>
                   {project.name}
                 </h1>
+                <h1 className='text-[2.2em] items-center justify-start gap-3 flex transition-all duration-300 transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 group-hover:visible invisible absolute top-0'>
+                  {project.name} <ArrowUpRight className="hidden group-hover:block font-extrabold size-10" fontSize={20}/>
+                </h1>
               </div>
-            </div>
+            </SwiperSlide>
           ))
         }
 
       </div>
+      {/* </Swiper> */}
     </div>
   )
 }
