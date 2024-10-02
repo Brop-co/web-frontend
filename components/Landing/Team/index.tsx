@@ -8,10 +8,10 @@ import { Pagination } from 'swiper/modules'
 
 
 function Team({ }) {
-    const [screenWidth, setScreenWidth] = React.useState<number|null>(null);
+    const [screenWidth, setScreenWidth] = React.useState<number | null>(null);
 
     const getScreenWidth = () => {
-        setScreenWidth(window.innerWidth); 
+        setScreenWidth(window.innerWidth);
     }
 
     React.useEffect(() => {
@@ -22,9 +22,9 @@ function Team({ }) {
         }
     }, []);
 
-    React.useEffect(()=>{
+    React.useEffect(() => {
         console.log(screenWidth)
-    },[screenWidth])
+    }, [screenWidth])
     return (
         <div
             id='our-brand'
@@ -42,7 +42,7 @@ function Team({ }) {
             </div>
             <div className='w-full mt-10'>
                 <Swiper
-                    slidesPerView={screenWidth && screenWidth > 1028 ? 3 : screenWidth && screenWidth > 600 ? 2 : 1 }
+                    slidesPerView={screenWidth && screenWidth > 1000 ? 3 : screenWidth && screenWidth > 600 ? 2 : screenWidth && screenWidth === null ? 2 : 1}
                     modules={[Pagination]}
                     pagination={{ dynamicBullets: false }}
                     className='flex gap-5 w-full'
