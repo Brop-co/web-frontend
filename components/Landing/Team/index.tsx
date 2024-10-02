@@ -10,21 +10,19 @@ import { Pagination } from 'swiper/modules'
 function Team({ }) {
     const [screenWidth, setScreenWidth] = React.useState<number | null>(null);
 
-    const getScreenWidth = () => {
-        setScreenWidth(window.innerWidth);
-    }
-
     React.useEffect(() => {
-        window.addEventListener('resize', getScreenWidth);
+        const updateScreenWidth = () => {
+            setScreenWidth(window.innerWidth);
+        };
+
+        updateScreenWidth();
+
+        window.addEventListener('resize', updateScreenWidth);
 
         return () => {
-            window.removeEventListener('resize', getScreenWidth);
-        }
+            window.removeEventListener('resize', updateScreenWidth);
+        };
     }, []);
-
-    React.useEffect(() => {
-        console.log(screenWidth)
-    }, [screenWidth])
     return (
         <div
             id='our-brand'
