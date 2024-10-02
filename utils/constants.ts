@@ -24,3 +24,11 @@ export const projects = [
     { name: "Conexus", category: "AI", image: "/svg/conexus.svg", description: "Conexus is an integrated platform that bridges communication and mobility gaps for deaf and visually impaired individuals." },
     { name: "Conexus", category: "AI", image: "/svg/conexus.svg", description: "Conexus is an integrated platform that bridges communication and mobility gaps for deaf and visually impaired individuals." },
 ]
+
+
+export const services = [
+    { name: "Mobile App Development", image: "/svg/mobile.svg", desc: "Brop CO, Mobile Development Service"},
+    { name: "Web Development", image: "/svg/webdev_service.svg", desc: "Brop CO, Web Development Development Service"},
+    { name: "Branding & Marketing", image: "/svg/branding.svg", desc: "Brop CO, Branding & Marketing Service"},
+    { name: "AI & IoT Engineering", image: "/svg/iot.svg", desc: "Brop CO, AI Service"},
+] 

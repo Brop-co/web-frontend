@@ -1,3 +1,4 @@
+// import { ModelViewer } from '@/components/model-viewer'
 import { ArrowDown } from 'lucide-react'
 import Image from 'next/image'
 import React from 'react'
@@ -14,14 +15,14 @@ function Hero({}) {
         className='w-[60%] place-content-center absolute -z-10'
         />
 
-        <div className='flex justify-center gap-10 items-center pl-10 pr-10 relative top-10'>
-            <div className='w-[50%] text-left flex flex-col gap-2'>
+        <div className='flex flex-col sm:flex-row justify-center gap-10 items-center pl-10 pr-10 relative top-10 text-center md:text-left'>
+              <div className='w-full sm:w-[50%] mt-10 md:mt-0 flex flex-col gap-2 text-center md:tex-left'>
 
                 <p>Orbital Viewport</p>
                 <h1 className='text-[var(--color-2)] font-extrabold'>KIGALI CITY</h1>
                 <h2>Rwanda</h2>
             </div>
-            <div className='w-[50%] '>
+            <div className='w-[50%] absolute sm:relative -z-50'>
                 <Image
                 src={"/images/globe.png"}
                 width={500}
@@ -31,7 +32,7 @@ function Hero({}) {
                 />
                 {/* <ModelViewer/> */}
             </div>
-            <div className='w-[50%] flex flex-col gap-5 items-start justify-start'>
+              <div className='w-full sm:w-[50%] flex flex-col gap-5 items-center sm:items-start justify-start'>
                 <Image
                 src={"/svg/customers.svg"}
                 width={200}
