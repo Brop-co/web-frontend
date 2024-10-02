@@ -53,7 +53,7 @@ body {
 
 
 .btn--outline {
-  @apply outline
+  @apply border-[2px] border-white
 }
 
 .btn--unusual {

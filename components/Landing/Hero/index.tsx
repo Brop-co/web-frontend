@@ -45,7 +45,7 @@ function Hero({}) {
             </div>
         </div>
 
-        <button className='relative  btn btn--outline flex items-center gap-5'>
+        <button className='relative  btn btn--outline flex items-center gap-5 animate-bounce mt-5'>
             <ArrowDown/>
             Scroll to continue
         </button>
