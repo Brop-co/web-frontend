@@ -8,7 +8,7 @@ import { Pagination } from 'swiper/modules'
 
 
 function Team({ }) {
-    const [screenWidth, setScreenWidth] = React.useState(window.innerWidth);
+    const [screenWidth, setScreenWidth] = React.useState<number|null>(null);
 
     const getScreenWidth = () => {
         setScreenWidth(window.innerWidth); 
