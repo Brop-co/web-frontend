@@ -42,7 +42,7 @@ function Team({ }) {
             </div>
             <div className='w-full mt-10'>
                 <Swiper
-                    slidesPerView={screenWidth && screenWidth > 1000 ? 3 : screenWidth && screenWidth > 600 ? 2 : screenWidth && screenWidth === null ? 2 : 1}
+                    slidesPerView={screenWidth && screenWidth > 1000 ? 3 : screenWidth && screenWidth > 600 ? 2 : screenWidth === null ? 3 : 1}
                     modules={[Pagination]}
                     pagination={{ dynamicBullets: false }}
                     className='flex gap-5 w-full'
