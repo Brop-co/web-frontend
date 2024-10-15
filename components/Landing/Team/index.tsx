@@ -54,7 +54,7 @@ function Team({ }) {
                                         width={200}
                                         height={200}
                                         alt={`Brop Inc, Brop's ${member.name}, ${member.role}`}
-                                        className=''
+                                        className='group-hover:scale-125 transition-all duration-500'
                                     />
 
                                     <div className="flex flex-col gap-2 w-full items-center">

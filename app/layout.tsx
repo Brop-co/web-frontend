@@ -6,7 +6,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 export const metadata: Metadata = {
-  title: "Brop CO",
+  title: "Brop",
   description: "Discover Brop, where experts deliver custom software solutions, web development, and innovative technology services. Transform your vision into reality with our top-tier expertise.",
   keywords: "brop, brop inc, brop co, brop company ",
   openGraph: {

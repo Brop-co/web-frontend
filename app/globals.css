@@ -71,13 +71,19 @@ width: 100%;
 .page-header.is-sticky {
   position: fixed;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
-  padding: 1em;
+  padding: 2em, 0em;
   /* backdrop-filter: blur(10px); */
-  background: var(--background);
+  background: #02021e2c;
   animation: slideDown 0.35s ease-out;
-  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.352);
-
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.474);
+  backdrop-filter: blur(50px); 
+  -webkit-backdrop-filter: blur(50px); 
 }
+
+html {
+  scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
 
 .page-header.is-sticky img {
   max-width: 80%;
